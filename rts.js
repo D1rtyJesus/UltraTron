@@ -1,0 +1,17 @@
+function RTS(idk, timeS) {
+    let sum = 0;
+    let numb = 0;
+    const start = Date.now();
+    const timeout = timeS * 1000;
+    
+    while (Date.now() < start + timeout) {
+        sum += idk.next().value;
+        numb += 1;
+        let avrg = sum / numb;
+        console.log("Average: " + avrg , ", Operations: " + numb, ", Total sum: " + sum); 
+    }
+    
+    return sum; 
+}
+
+module.exports = RTS;

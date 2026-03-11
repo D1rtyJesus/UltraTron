@@ -1,0 +1,7 @@
+function* RANDOM() {
+    while (true) {
+        yield Math.floor(Math.random() * Math.pow(10, 8));
+    }
+}
+
+module.exports = RANDOM;
