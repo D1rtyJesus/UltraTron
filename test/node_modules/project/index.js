@@ -1,0 +1,7 @@
+const RANDOM = require('./random');
+const RTS = require('./rts');
+
+module.exports = {
+    RANDOM,
+    RTS
+};
